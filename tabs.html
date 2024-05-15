@@ -1,0 +1,31 @@
+<div id="buttons">
+  <button class="tablink" onclick="openPage('Home', this, 'red')">npm</button>
+  <button
+    class="tablink"
+    onclick="openPage('News', this, 'green')"
+    id="defaultOpen"
+    >yarn</button
+  >
+  <button class="tablink" onclick="openPage('Contact', this, 'blue')"
+    >pnpm</button
+  >
+  <button class="tablink" onclick="openPage('About', this, 'orange')"
+    >bun</button
+  >
+</div>
+
+<div id="Home" class="tabcontent">
+  ```sh npm install --save-dev --save-exact prettier ```
+</div>
+
+<div id="News" class="tabcontent">
+  ```sh yarn add --dev --exact prettier ```
+</div>
+
+<div id="Contact" class="tabcontent">
+  ```sh pnpm add --save-dev --save-exact prettier ```
+</div>
+
+<div id="About" class="tabcontent">
+  ```sh bun add --dev --exact prettier ```
+</div>
