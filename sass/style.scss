@@ -420,3 +420,14 @@ mark {
 blockquote {
   border-color: var(--color-primary);
 }
+.title {
+  text-decoration: none;
+}
+.title h1 {
+  font-size: var(--size-step-1);
+  margin-bottom: 0;
+}
+.title:hover {
+  text-decoration: none;
+  padding-inline: inherit;
+}
