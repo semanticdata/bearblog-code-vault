@@ -81,8 +81,7 @@ $spacing: 1.5rem;
 body {
   background: var(--color-light);
   color: var(--color-dark);
-  padding: $spacing
-    clamp(calc($spacing / 2), 5vw, calc($spacing * 3));
+  padding: $spacing clamp(calc($spacing / 2), 5vw, calc($spacing * 3));
   font-family: var(--font-stack);
   font-size: var(--size-step-0);
   line-height: 1.5;

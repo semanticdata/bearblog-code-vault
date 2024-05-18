@@ -9,5 +9,5 @@ span.textContent = firstWord;
 // Use regular expression with word boundary to ensure only the first occurrence is replaced
 paragraph.innerHTML = paragraph.innerHTML.replace(
   new RegExp("\\b" + firstWord + "\\b"),
-  span.outerHTML
+  span.outerHTML,
 );
