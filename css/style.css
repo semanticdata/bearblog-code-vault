@@ -415,3 +415,6 @@ hr {
 mark {
   padding-inline: 3px;
 }
+blockquote {
+  border-color: var(--color-primary);
+}
