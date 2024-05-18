@@ -1,0 +1,9 @@
+base_url = "https://miguelpimentel.do/"
+title = "Miguel Pimentel"
+description = "Personal website."
+compile_sass = true
+build_search_index = false
+
+[markdown]
+highlight_code = true
+# highlight_theme = "base16-ocean-light"

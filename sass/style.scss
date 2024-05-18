@@ -1,5 +1,8 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import "callouts";
+
+$spacing: 1.5rem;
 
 /* Focus behaviour */
 /*:is(a, button, input, textarea, summary, code) {*/
@@ -78,8 +81,8 @@
 body {
   background: var(--color-light);
   color: var(--color-dark);
-  padding: var(--spacing)
-    clamp(calc(var(--spacing) / 2), 5vw, calc(var(--spacing) * 3));
+  padding: $spacing
+    clamp(calc($spacing / 2), 5vw, calc($spacing * 3));
   font-family: var(--font-stack);
   font-size: var(--size-step-0);
   line-height: 1.5;
@@ -92,8 +95,8 @@ main {
   flex: 1;
 }
 header {
-  padding-bottom: var(--spacing);
-  margin-bottom: var(--spacing);
+  padding-bottom: $spacing;
+  margin-bottom: $spacing;
 }
 header,
 main,
@@ -150,36 +153,36 @@ h6 {
 }
 ul,
 ol {
-  -webkit-padding-start: var(--spacing);
-  padding-inline-start: var(--spacing);
+  -webkit-padding-start: $spacing;
+  padding-inline-start: $spacing;
 }
 li {
-  padding-block-start: cal(var(--spacing) * 0.5);
+  padding-block-start: cal($spacing * 0.5);
 }
 blockquote {
-  -webkit-padding-start: var(--spacing);
-  padding-inline-start: var(--spacing);
+  -webkit-padding-start: $spacing;
+  padding-inline-start: $spacing;
   -webkit-border-start: 0.3em solid;
   border-inline-start: 0.3em solid;
   font-style: italic;
   font-size: var(--size-step-1);
-  margin-left: var(--spacing);
+  margin-left: $spacing;
 }
 /* Utilities */
 content > div > * {
-  -webkit-margin-before: var(--flow-space, var(--spacing));
-  margin-block-start: var(--flow-space, var(--spacing));
+  -webkit-margin-before: var(--flow-space, $spacing);
+  margin-block-start: var(--flow-space, $spacing);
 }
 /* Flow and rhythm */
 :is(h1, h2, h3, h4, h5, blockquote) {
-  --flow-space: calc(var(--spacing) * 2);
-  margin-block-end: calc(var(--spacing) / 2);
+  --flow-space: calc($spacing * 2);
+  margin-block-end: calc($spacing / 2);
 }
 :is(h1, h2, h3, h4, h5) + * {
-  --flow-space: calc(var(--spacing) / 3);
+  --flow-space: calc($spacing / 3);
 }
 :is(h1, h2, h3, h4, h5) + :where(h2, h3, h4, h5) {
-  --flow-space: calc(var(--spacing));
+  --flow-space: calc($spacing);
 }
 
 main,
@@ -216,13 +219,13 @@ ul.blog-posts li span {
   font-size: var(--size-step-0);
   min-width: 11ch;
   display: block;
-  margin-block-start: var(--spacing);
+  margin-block-start: $spacing;
 }
 
 /* Code */
 .highlight,
 .code {
-  padding: var(--spacing) 1px;
+  padding: $spacing 1px;
   background-color: var(--code-background-color);
   color: var(--code-color);
 }
@@ -237,14 +240,14 @@ code {
 }
 pre {
   border-radius: 5px;
-  padding: calc(var(--spacing) / 2);
+  padding: calc($spacing / 2);
   overflow: auto;
 }
 
 /* Tables */
 table {
   width: 100%;
-  margin: calc(var(--spacing)) auto;
+  margin: calc($spacing) auto;
   border: 1px solid var(--color-text);
   border-collapse: collapse;
   font-size: var(--size-step-0);
@@ -285,7 +288,7 @@ table td {
   display: flex;
   font-size: var(--size-step-0);
   font-weight: 400;
-  margin-block-start: var(--spacing);
+  margin-block-start: $spacing;
   outline: 2px solid orange;
   /*border-radius: 0.3rem;*/
   padding: 1rem;
@@ -319,7 +322,7 @@ footer span + span {
     float: none;
   }
   footer span + span {
-    margin-block-start: calc(var(--spacing) / 2);
+    margin-block-start: calc($spacing / 2);
     display: block;
     text-align: center;
     float: none;
@@ -327,7 +330,7 @@ footer span + span {
 }
 /* Footnotes */
 section.footnotes p {
-  margin: calc(var(--spacing) / 8) 0;
+  margin: calc($spacing / 8) 0;
 }
 
 /* 404 not found */
