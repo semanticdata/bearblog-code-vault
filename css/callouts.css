@@ -55,40 +55,138 @@
 .callout-success,
 .callout-tip,
 .callout-todo,
-.callout-warning
-{
-  border: 1px solid;
+.callout-warning {
+  border: 2px solid;
   margin-block: 1rem;
   border-radius: 5px;
   padding: 1rem 2rem;
   box-sizing: border-box;
+  background-color: #000000;
 }
-.callout-abstract {border-color: var(--callout-color-abstract);}
-.callout-bug {border-color: var(--callout-color-bug);}
-.callout-danger {border-color: var(--callout-color-danger);}
-.callout-example {border-color: var(--callout-color-example);}
-.callout-failure {border-color: var(--callout-color-failure);}
-.callout-fold {border-color: var(--callout-color-fold);}
-.callout-info {border-color: var(--callout-color-info);}
-.callout-note {border-color: var(--callout-color-note);}
-.callout-question {border-color: var(--callout-color-question);}
-.callout-quote {border-color: var(--callout-color-quote);}
-.callout-success {border-color: var(--callout-color-success);}
-.callout-tip {border-color: var(--callout-color-tip);}
-.callout-todo {border-color: var(--callout-color-todo);}
-.callout-warning {border-color: var(--callout-color-warning);}
+.callout-abstract {
+  border-color: var(--callout-color-abstract);
+}
+.callout-bug {
+  border-color: var(--callout-color-bug);
+}
+.callout-danger {
+  border-color: var(--callout-color-danger);
+}
+.callout-example {
+  border-color: var(--callout-color-example);
+}
+.callout-failure {
+  border-color: var(--callout-color-failure);
+}
+.callout-fold {
+  border-color: var(--callout-color-fold);
+}
+.callout-info {
+  border-color: var(--callout-color-info);
+}
+.callout-note {
+  border-color: var(--callout-color-note);
+}
+.callout-question {
+  border-color: var(--callout-color-question);
+}
+.callout-quote {
+  border-color: var(--callout-color-quote);
+}
+.callout-success {
+  border-color: var(--callout-color-success);
+}
+.callout-tip {
+  border-color: var(--callout-color-tip);
+}
+.callout-todo {
+  border-color: var(--callout-color-todo);
+}
+.callout-warning {
+  border-color: var(--callout-color-warning);
+}
 
-.callout-abstract::before {content: var(--callout-icon-abstract) " Abstract" "\A";white-space: pre;color: var(--callout-color-abstract);font-size: 24px;}
-.callout-bug::before {content: var(--callout-icon-bug) " Bug" "\A";white-space: pre;color: var(--callout-color-bug);font-size: 24px;}
-.callout-danger::before {content: var(--callout-icon-danger) " Danger" "\A";white-space: pre;color: var(--callout-color-danger);font-size: 24px;}
-.callout-example::before {content: var(--callout-icon-example) " Example" "\A";white-space: pre;color: var(--callout-color-example);font-size: 24px;}
-.callout-failure::before {content: var(--callout-icon-failure) " Failure" "\A";white-space: pre;color: var(--callout-color-failure);font-size: 24px;}
-.callout-fold::before {content: var(--callout-icon-fold) " Fold" "\A";white-space: pre;color: var(--callout-color-fold);font-size: 24px;}
-.callout-info::before {content: var(--callout-icon-info) " Info" "\A";white-space: pre;color: var(--callout-color-info);font-size: 24px;}
-.callout-note::before {content: var(--callout-icon-note) " Note" "\A";white-space: pre;color: var(--callout-color-note);font-size: 24px;}
-.callout-question::before {content: var(--callout-icon-question) " Question" "\A";white-space: pre;color: var(--callout-color-question);font-size: 24px;}
-.callout-quote::before {content: var(--callout-icon-quote) " Quote" "\A";white-space: pre;color: var(--callout-color-quote);font-size: 24px;}
-.callout-success::before {content: var(--callout-icon-success) " Success" "\A";white-space: pre;color: var(--callout-color-success);font-size: 24px;}
-.callout-tip::before {content: var(--callout-icon-tip) " Tip" "\A";white-space: pre;color: var(--callout-color-tip);font-size: 24px;}
-.callout-todo::before {content: var(--callout-icon-todo) " Todo" "\A";white-space: pre;color: var(--callout-color-todo);font-size: 24px;}
-.callout-warning::before {content: var(--callout-icon-warning) " Warning" "\A";white-space: pre;color: var(--callout-color-warning);font-size: 24px;}
+.callout-abstract::before {
+  content: var(--callout-icon-abstract) " Abstract" "\A";
+  white-space: pre;
+  color: var(--callout-color-abstract);
+  font-size: 24px;
+}
+.callout-bug::before {
+  content: var(--callout-icon-bug) " Bug" "\A";
+  white-space: pre;
+  color: var(--callout-color-bug);
+  font-size: 24px;
+}
+.callout-danger::before {
+  content: var(--callout-icon-danger) " Danger" "\A";
+  white-space: pre;
+  color: var(--callout-color-danger);
+  font-size: 24px;
+}
+.callout-example::before {
+  content: var(--callout-icon-example) " Example" "\A";
+  white-space: pre;
+  color: var(--callout-color-example);
+  font-size: 24px;
+}
+.callout-failure::before {
+  content: var(--callout-icon-failure) " Failure" "\A";
+  white-space: pre;
+  color: var(--callout-color-failure);
+  font-size: 24px;
+}
+.callout-fold::before {
+  content: var(--callout-icon-fold) " Fold" "\A";
+  white-space: pre;
+  color: var(--callout-color-fold);
+  font-size: 24px;
+}
+.callout-info::before {
+  content: var(--callout-icon-info) " Info" "\A";
+  white-space: pre;
+  color: var(--callout-color-info);
+  font-size: 24px;
+}
+.callout-note::before {
+  content: var(--callout-icon-note) " Note" "\A";
+  white-space: pre;
+  color: var(--callout-color-note);
+  font-size: 24px;
+}
+.callout-question::before {
+  content: var(--callout-icon-question) " Question" "\A";
+  white-space: pre;
+  color: var(--callout-color-question);
+  font-size: 24px;
+}
+.callout-quote::before {
+  content: var(--callout-icon-quote) " Quote" "\A";
+  white-space: pre;
+  color: var(--callout-color-quote);
+  font-size: 24px;
+}
+.callout-success::before {
+  content: var(--callout-icon-success) " Success" "\A";
+  white-space: pre;
+  color: var(--callout-color-success);
+  font-size: 24px;
+}
+.callout-tip::before {
+  content: var(--callout-icon-tip) " Tip" "\A";
+  white-space: pre;
+  color: var(--callout-color-tip);
+  font-size: 24px;
+}
+.callout-todo::before {
+  content: var(--callout-icon-todo) " Todo" "\A";
+  white-space: pre;
+  color: var(--callout-color-todo);
+  font-size: 24px;
+}
+.callout-warning::before {
+  content: var(--callout-icon-warning) " Warning" "\A";
+  white-space: pre;
+  color: var(--callout-color-warning);
+  font-size: 24px;
+}
