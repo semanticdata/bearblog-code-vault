@@ -4,7 +4,7 @@ This repo contains placeholder HTML from my [bearblog](https://miguelpimentel.do
 
 It allows me to test new things without accidentally breaking the site. 😅
 
-This branch is deployed using [Zola](https://www.zola.org).
+This branch is deployed using [Zola](https://www.getzola.org).
 
 ## 💜 Acknowledgements
 
