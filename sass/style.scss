@@ -1,6 +1,6 @@
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import "callouts";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import 'callouts';
 
 $spacing: 1.5rem;
 
@@ -54,7 +54,7 @@ $spacing: 1.5rem;
   --color-text: #444;
 
   --font-main: Verdana, sans-serif;
-  --font-stack: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+  --font-stack: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
   --page-width: 80ch;
   --spacing: 1.5rem;
   --visited-color: #8b6fcb;
@@ -291,7 +291,7 @@ table td {
   outline: 2px solid orange;
   /*border-radius: 0.3rem;*/
   padding: 1rem;
-  content: "This page explores the concept of keeping a public journal, something I haven’t done before. I’m still defining what exactly I should include in this journal. I’m currently making sure it’s not too technical, or difficult to read.";
+  content: 'This page explores the concept of keeping a public journal, something I haven’t done before. I’m still defining what exactly I should include in this journal. I’m currently making sure it’s not too technical, or difficult to read.';
 }
 .journal-year {
   outline: 2px solid green;

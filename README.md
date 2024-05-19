@@ -8,7 +8,7 @@ This branch is deployed using [Zola](https://www.getzola.org).
 
 ## 💜 Acknowledgements
 
-The website is powered by [ʕ•ᴥ•ʔ Bear](https://bearblog.dev/), authored by [Herman](https://github.com/HermanMartinus). Big thanks to them!
+The website is powered by [ʕ•ᴥ•ʔ Bear](https://bearblog.dev/), created by [Herman](https://github.com/HermanMartinus). Big thanks to them!
 
 ## © License
 

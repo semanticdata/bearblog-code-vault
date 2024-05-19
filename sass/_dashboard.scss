@@ -1,6 +1,6 @@
 /* Source: https://bearblog.dev/dashboard/customise/ */
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* Focus behaviour */
 :is(a, button, input, textarea, summary) {
@@ -51,7 +51,7 @@
   --color-text: #444;
 
   --font-main: Verdana, sans-serif;
-  --font-stack: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+  --font-stack: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
   --page-width: 100ch;
   --spacing: 1.5rem;
   --visited-color: #8b6fcb;
@@ -151,33 +151,33 @@ blockquote {
 @keyframes blink {
   0%,
   96% {
-    content: "ᕦʕ •ᴥ•ʔᕤ";
+    content: 'ᕦʕ •ᴥ•ʔᕤ';
   }
 
   97%,
   100% {
-    content: "ᕦʕ -ᴥ-ʔᕤ";
+    content: 'ᕦʕ -ᴥ-ʔᕤ';
   }
 }
 
 .bear::before {
-  content: "ᕦʕ •ᴥ•ʔᕤ";
+  content: 'ᕦʕ •ᴥ•ʔᕤ';
   font-weight: 400;
   animation: blink 5s infinite;
 }
 
 .bear:hover::before {
-  content: "ᕙʕ ಠᴥಠʔᕗ";
+  content: 'ᕙʕ ಠᴥಠʔᕗ';
   animation: none;
 }
 
 .upgrade .bear::before {
-  content: "ᕦʕ.•ᴥ•ʔᕤ";
+  content: 'ᕦʕ.•ᴥ•ʔᕤ';
   font-weight: 400;
 }
 
 .upgrade:hover .bear::before {
-  content: "ᕙʕ.ಠᴥಠʔᕗ";
+  content: 'ᕙʕ.ಠᴥಠʔᕗ';
 }
 
 .account:hover {
@@ -186,14 +186,14 @@ blockquote {
 }
 
 .account::before {
-  content: "ʕ-ᴥ-ʔ";
+  content: 'ʕ-ᴥ-ʔ';
   width: 45px;
   display: inline-block;
   text-align: center;
 }
 
 .account:hover::before {
-  content: "ʕ•ᴥ•ʔ";
+  content: 'ʕ•ᴥ•ʔ';
   text-decoration: none;
 }
 
@@ -207,7 +207,7 @@ time {
 }
 
 textarea,
-input:not([type="submit"]),
+input:not([type='submit']),
 .editable {
   background-color: #eceff4;
   border: none;
@@ -218,26 +218,26 @@ input:not([type="submit"]),
 
 @media (prefers-color-scheme: dark) {
   textarea,
-  input:not([type="submit"]),
+  input:not([type='submit']),
   .editable {
     background-color: var(--color-code-background);
   }
 }
 
 .full-width textarea,
-.full-width input:not([type="submit"], [type="checkbox"], [type="radio"]) {
+.full-width input:not([type='submit'], [type='checkbox'], [type='radio']) {
   width: calc(100% - 20px);
 }
 
 textarea:required,
-input:required:not([type="submit"]) {
+input:required:not([type='submit']) {
   border-left: 1px solid #f99f9f;
   max-width: 100% !important;
   padding-inline: calc($spacing / 2);
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   height: 15px;
   margin-right: 10px;
 }
