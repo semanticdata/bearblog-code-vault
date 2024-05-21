@@ -1,14 +1,14 @@
-# 🐻 Bearblog Code Vault 🐼
+# 🐻 Bearblog Code Vault
 
-This repo contains placeholder HTML from my [bearblog](https://miguelpimentel.do/) mixed with current CSS, and JavaScript code being used on the site.
+This repository contains placeholder HTML from my [bearblog](https://miguelpimentel.do/) mixed with CSS, and JavaScript code being used on the site.
 
-It allows me to test new things without accidentally breaking the site. 😅
+It allows for testing new things without fear of accidentally breaking the site. 😅
 
-This branch is deployed using [Zola](https://www.getzola.org).
+We use [Zola](https://www.getzola.org) to make working on it easier.
 
 ## 💜 Acknowledgements
 
-The website is powered by [ʕ•ᴥ•ʔ Bear](https://bearblog.dev/), created by [Herman](https://github.com/HermanMartinus). Big thanks to them!
+The website is powered by [ʕ•ᴥ•ʔ Bear](https://bearblog.dev/), created by [Herman](https://github.com/HermanMartinus).
 
 ## © License
 
