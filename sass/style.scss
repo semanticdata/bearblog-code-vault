@@ -165,7 +165,8 @@ blockquote {
   border-inline-start: 0.3em solid;
   font-style: italic;
   font-size: var(--size-step-1);
-  margin-left: $spacing;
+  // margin-left: $spacing;
+  margin-left: 0;
 }
 /* Utilities */
 content > div > * {
