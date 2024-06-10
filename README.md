@@ -1,10 +1,10 @@
 # 🐻 Bearblog Code Vault
 
-This repository contains placeholder HTML from my [bearblog](https://miguelpimentel.do/) mixed with CSS, and JavaScript code being used on the site.
+This repository contains placeholder HTML (from my [bearblog](https://miguelpimentel.do/)) mixed with CSS, and JavaScript code being used on the site.
 
 It allows for testing new things without fear of accidentally breaking the site. 😅
 
-We use [Zola](https://www.getzola.org) to make working on it easier.
+We use [Zola](https://www.getzola.org) to make working on it easier. The output at `/build/` is then used to style the canonicl site.
 
 ## 💜 Acknowledgements
 
