@@ -57,6 +57,7 @@
     margin-block: 1rem;
     border-radius: 5px;
     padding: 0.5rem 1rem;
+    background-color: #00000010;
 }
 
 .callout-abstract {
@@ -253,7 +254,7 @@
     --visited-color: #8b6fcb;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --color-dark: #fafafa;
         --color-light: #1a1a1a;
@@ -264,7 +265,7 @@
         --color-link: #8cc2dd;
         --color-text: #ddd;
     }
-}
+} */
 
 * {
     box-sizing: border-box;
@@ -362,8 +363,8 @@ blockquote {
     -webkit-border-start: 0.3em solid;
     border-inline-start: 0.3em solid;
     font-style: italic;
-    font-size: var(--size-step-1);
-    margin-left: 0;
+    font-size: var(--size-step-0);
+    margin-left: 0.5rem;
 }
 
 content>div>* {
@@ -464,7 +465,7 @@ table {
 
 table thead th,
 table tfoot th {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: var(--color-code-background)
 }
 
 table th,
