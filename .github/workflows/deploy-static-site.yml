@@ -1,0 +1,47 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  workflow_dispatch:
+  # push: {branches: ["main"]}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Remove old demo
+        run: test -d demo && rm -rf demo/* || mkdir demo
+        # run: rm -rf demo/*
+
+      - name: Copy src to demo
+        run: |
+          cp -rf src/newtab.html demo/index.html
+          cp -rf src/styles.css demo/styles.css
+          test -d demo/icons && cp -r src/icons/* demo/icons || (mkdir demo/icons && cp -r src/icons/* demo/icons)
+          test -d demo/js && cp -r src/js/* demo/js || (mkdir demo/js && cp -r src/js/* demo/js)
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'demo'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
