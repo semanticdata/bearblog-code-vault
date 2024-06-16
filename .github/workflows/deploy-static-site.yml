@@ -29,9 +29,8 @@ jobs:
 
       - name: Copy src to demo
         run: |
-          cp -rf src/newtab.html demo/index.html
-          cp -rf src/styles.css demo/styles.css
-          test -d demo/icons && cp -r src/icons/* demo/icons || (mkdir demo/icons && cp -r src/icons/* demo/icons)
+          cp -rf src/index.html demo/index.html
+          test -d demo/css && cp -r src/css/* demo/css || (mkdir demo/css && cp -r src/css/* demo/css)
           test -d demo/js && cp -r src/js/* demo/js || (mkdir demo/js && cp -r src/js/* demo/js)
 
       - name: Setup Pages
