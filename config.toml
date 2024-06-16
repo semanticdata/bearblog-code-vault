@@ -1,5 +1,0 @@
-base_url = "https://miguelpimentel.do/"
-title = "Miguel Pimentel"
-description = "Personal website."
-compile_sass = true
-output_dir = "build"
